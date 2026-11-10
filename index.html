@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#f6f5ef">
+  <meta name="description" content="Личный тренажёр по архитектуре и строительным нормам: вопросы, объяснения и повторение ошибок.">
+  <title>Шаг выше — подготовка по архитектуре</title>
+  <link rel="icon" href="./favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./styles.css"><link rel="stylesheet" href="./mobile.css"><link rel="stylesheet" href="./knowledge.css"><script type="module" src="./app.js"></script>
+</head>
+<body>
+  <a class="skip" href="#main">К содержанию</a>
+  <aside class="sidebar">
+    <button class="brand" data-home aria-label="Шаг выше — главная"><svg viewBox="0 0 40 40" aria-hidden="true"><path d="M8 30V21H17V13H26V5H34"/><path d="M8 35H34"/></svg><span>шаг выше<span class="brand-sub">ЛИЧНЫЙ ТРЕНАЖЁР</span></span></button>
+    <div class="side-label">ВАША ПОДГОТОВКА</div>
+    <nav aria-label="Основная навигация">
+      <button class="nav-button active" data-home><span aria-hidden="true">◧</span> Практика <span class="nav-dot"></span></button>
+      <button class="nav-button" id="nav-knowledge"><span aria-hidden="true">▤</span> База знаний</button>
+      <button class="nav-button" id="nav-mistakes"><span aria-hidden="true">↻</span> Мои ошибки <span class="nav-count" id="side-errors">0</span></button>
+    </nav>
+    <div class="side-note"><span class="little-star" aria-hidden="true">✳</span><p>Небольшой шаг сегодня.<br>Больше уверенности завтра.</p></div>
+    <div class="side-bottom"><span class="online-dot"></span> Архитектура и строительство</div>
+  </aside>
+  <div class="workspace">
+    <header class="topbar"><div><span class="breadcrumb">МОЯ ПОДГОТОВКА</span><span class="crumb-divider">/</span><span id="page-label">Практика</span></div><span class="top-chip"><span class="online-dot"></span> В своём темпе</span></header>
+    <main id="main" tabindex="-1"><noscript>Для работы тренажёра включите JavaScript в браузере.</noscript></main>
+    <footer><span>Шаг выше <span class="footer-dot">·</span> Учимся понимать, а не угадывать.</span><span id="storage-label">Прогресс сохраняется на этом устройстве</span></footer>
+  </div>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
