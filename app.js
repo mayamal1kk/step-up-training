@@ -1,7 +1,7 @@
-import {questions,topics,groups,version,sourceUrl} from './questions.js?v=2026-11-12.1';
+import {questions,topics,groups,version,sourceUrl} from './questions.js?v=2026-11-13.1';
 import {createRun,isValidRun,scoreRun} from './core.js';
 import {buildKnowledgeIndex,findKnowledgeTopics} from './knowledge.js';
-import {articles} from './articles.js?v=2026-11-12.1';
+import {articles} from './articles.js?v=2026-11-13.1';
 const main=document.querySelector('#main'), lookup=new Map(questions.map(q=>[q.id,q])), topicMap=new Map(topics.map(t=>[t.id,t]));
 const key='step-up-study-v1';
 const escape=value=>String(value).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
